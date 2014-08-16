@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:niyay="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.niyay.reader"
+    tools:context="com.niyay.reader.MainActivity" >
+
+    <item android:id="@+id/menu_new"
+        android:icon="@drawable/ic_new"
+        android:title="มาใหม่"
+        niyay:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_update"
+        android:icon="@drawable/ic_update"
+        android:title="อัพเดท"
+        niyay:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_hot"
+        android:icon="@drawable/ic_hot"
+        android:title="ติดอันดับ"
+        niyay:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_finished"
+        android:icon="@drawable/ic_finished"
+        android:title="จบแล้ว"
+        niyay:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="ชื่นชอบ"
+        niyay:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        android:title="ค้นหา"
+        niyay:showAsAction="ifRoom"/>
+
+</menu>

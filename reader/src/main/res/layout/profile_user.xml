@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:startupUI="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:background="@android:color/holo_green_dark">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/imgDetailUser"
+        android:layout_below="@+id/viewSynopsis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_user" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="ผู้แต่ง"
+        android:id="@+id/lblAuthor"
+        android:layout_toRightOf="@+id/imgDetailUser"
+        android:textSize="14pt"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_alignTop="@+id/imgDetailUser" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="email"
+        android:id="@+id/lblEmail"
+        android:layout_below="@+id/lblAuthor"
+        android:layout_toRightOf="@+id/imgDetailUser"
+        android:textSize="14pt"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Title"
+        android:id="@+id/lblTitle"
+        android:textSize="14pt"
+        android:layout_below="@+id/lblEmail"
+        android:layout_toRightOf="@+id/imgDetailUser"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Cool"
+        android:id="@+id/lblCool"
+        android:textSize="10pt"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_below="@+id/lblTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Level"
+        android:id="@+id/lblLevel"
+        android:textSize="10pt"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_alignBaseline="@+id/lblCool"
+        android:layout_alignBottom="@+id/lblCool"
+        android:layout_toRightOf="@+id/lblCool"
+        android:layout_marginLeft="10dp" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Class"
+        android:id="@+id/lblClass"
+        android:textSize="10pt"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_alignBaseline="@+id/lblLevel"
+        android:layout_alignBottom="@+id/lblLevel"
+        android:layout_toRightOf="@+id/lblLevel"
+        android:layout_marginLeft="10dp" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Point"
+        android:id="@+id/lblPoint"
+        android:textSize="10pt"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_alignBaseline="@+id/lblClass"
+        android:layout_alignBottom="@+id/lblClass"
+        android:layout_toRightOf="@+id/lblClass"
+        android:layout_marginLeft="10dp" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="view"
+        android:id="@+id/lblView"
+        android:textSize="10pt"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_below="@+id/imgDetailUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite"
+        android:id="@+id/btnFavorite"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lblTitle"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

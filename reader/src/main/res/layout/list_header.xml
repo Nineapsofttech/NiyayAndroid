@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:startupUI="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@android:color/holo_green_light">
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Title"
+        android:id="@+id/lblCategory"
+        android:textSize="18pt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white" />
+
+    <com.niyay.reader.Category
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinType"
+        android:spinnerMode="dialog"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/lblCategory"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/lblCategory"
+        android:layout_toLeftOf="@+id/searchView" />
+
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSearch"
+        android:layout_alignBottom="@+id/lblCategory"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="planets_array">
+        <item>ทุกประเภท</item>
+        <item>วัยรุ่นวุ่นรัก</item>
+        <item>รัก,โรแมนติค</item>
+        <item>ตลก,คอมเมนดี้,เบาสมอง</item>
+        <item>บู๊ล้างผลาญ</item>
+        <item>สยองขวัญ,สั่นประสาท</item>
+        <item>ลึกลับ,สืบสวน สอบสวน</item>
+        <item>โรมานซ์</item>
+        <item>ไซไฟ (นิยายวิทยาศาสตร์)</item>
+        <item>แฟนตาซี</item>
+        <item>Yaoi</item>
+        <item>Yuri</item>
+        <item>กำลังภายใน</item>
+        <item>ชีวิต/ดราม่า</item>
+        <item>แฟนฟิกชั่น</item>
+        <item>รักหวานซึ้ง</item>
+        <item>นิยายแปล</item>
+        <item>อื่น ๆ</item>
+    </string-array>
+    <BasicNameValuePair name="category-niyay">
+
+    </BasicNameValuePair>
+</resources>

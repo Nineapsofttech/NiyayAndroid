@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/linearLayout"
+    android:paddingTop="5dp">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/news"
+        android:layout_weight="1"
+        android:background="@null"
+        android:tag="new"
+        android:src="@drawable/ic_new"
+        android:scaleType="fitCenter" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_weight="1"
+        android:background="@null"
+        android:tag="update"
+        android:src="@drawable/ic_update"
+        android:scaleType="fitCenter" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hot"
+        android:layout_weight="1"
+        android:background="@null"
+        android:tag="hot"
+        android:src="@drawable/ic_hot"
+        android:scaleType="fitCenter" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finished"
+        android:layout_weight="1"
+        android:background="@null"
+        android:tag="finished"
+        android:src="@drawable/ic_finished"
+        android:scaleType="fitCenter" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favorite"
+        android:layout_weight="1"
+        android:background="@null"
+        android:tag="favorite"
+        android:src="@drawable/ic_favorite"
+        android:scaleType="fitCenter" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_weight="1"
+        android:background="@null"
+        android:tag="search"
+        android:src="@drawable/ic_search"
+        android:scaleType="fitCenter" />
+
+</LinearLayout>

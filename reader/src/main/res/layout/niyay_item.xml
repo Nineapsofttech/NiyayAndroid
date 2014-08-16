@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:startupUI="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:clickable="false"
+    android:id="@+id/project_list"
+    android:focusable="false">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imgUser"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="ชื่อเรื่อง"
+        android:textSize="14pt"
+        android:id="@+id/lblNiyayTitle"
+        android:layout_below="@+id/lblViewCount"
+        android:layout_toRightOf="@+id/imgUser"
+        android:layout_toLeftOf="@+id/imageView" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="อ่าน"
+        android:textSize="8pt"
+        android:id="@+id/lblViewCount"
+        android:textColor="#168cce"
+        android:layout_below="@+id/lblUser"
+        android:layout_toRightOf="@+id/imgUser" />
+
+    <com.niyay.reader.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        startupUI:customTypeface="fonts/ThaiSansNeue-Regular.ttf"
+        android:text="Username"
+        android:textSize="8pt"
+        android:id="@+id/lblUser"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_alignTop="@+id/imgUser"
+        android:layout_toRightOf="@+id/imgUser" />
+
+    <ImageView android:src="@drawable/ic_next"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/lblUpdate"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBaseline="@+id/lblViewCount"
+        android:layout_alignBottom="@+id/lblViewCount"
+        android:layout_toRightOf="@+id/lblViewCount" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgFavorite"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView"
+        android:src="@drawable/bookmark" />
+
+</RelativeLayout>
